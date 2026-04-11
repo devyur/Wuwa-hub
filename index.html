@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WuWa Team Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-gem">◈</span>
+      <span class="logo-text">WuWa <em>Team Tracker</em></span>
+    </div>
+    <div class="page-tabs" id="pageTabs"></div>
+    <div class="header-actions">
+      <button class="btn-ghost" id="btnNewPage">+ New Page</button>
+      <button class="btn-ghost" id="btnExportJson">Export</button>
+      <button class="btn-ghost" id="btnImport">Import</button>
+      <input type="file" id="importFile" accept=".json" style="display:none">
+    </div>
+  </div>
+</header>
+
+<!-- HERO POOL -->
+<section class="pool-section">
+  <div class="pool-header">
+    <h2>Hero Pool</h2>
+    <span class="pool-hint">Drag heroes onto a team slot, or click an empty slot</span>
+  </div>
+  <div class="element-filters" id="elementFilters"></div>
+  <div class="hero-pool" id="heroPool"></div>
+</section>
+
+<!-- TEAMS -->
+<section class="teams-section">
+  <div class="teams-header">
+    <h2>Teams <span id="pageLabel"></span></h2>
+    <div class="teams-actions">
+      <button class="btn-secondary" id="btnSortDamage">↕ Sort by Damage</button>
+      <button class="btn-gold" id="btnExportPdf">⬇ PDF Report</button>
+      <button class="btn-primary" id="btnAddTeam">+ Add Team</button>
+    </div>
+  </div>
+  <div class="teams-grid" id="teamsGrid"></div>
+</section>
+
+<!-- HERO DETAIL MODAL -->
+<div id="heroModal" class="modal-overlay" style="display:none">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- PICK MODAL -->
+<div id="pickModal" class="modal-overlay" style="display:none">
+  <div class="modal-box modal-wide">
+    <button class="modal-close" id="pickModalClose">✕</button>
+    <h3 style="margin:0 0 1rem;font-family:var(--font-title);color:var(--gold)">Choose a Hero</h3>
+    <div class="pick-grid" id="pickGrid"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
