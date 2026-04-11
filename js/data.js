@@ -40,6 +40,7 @@ var HEROES = [
   { id: "carlotta",       name: "Carlotta",        element: "Glacio",   rarity: "5*", canUseMultiple: false },
   { id: "roccia",         name: "Roccia",          element: "Havoc",    rarity: "5*", canUseMultiple: false },
   { id: "brant",          name: "Brant",           element: "Fusion",   rarity: "5*", canUseMultiple: false },
+  { id: "phoebe",         name: "Phoebe",          element: "Spectro",  rarity: "5*", canUseMultiple: false },
   { id: "cantarella",     name: "Cantarella",      element: "Havoc",    rarity: "5*", canUseMultiple: false },
   { id: "zani",           name: "Zani",            element: "Spectro",  rarity: "5*", canUseMultiple: false },
   { id: "ciaccona",       name: "Ciaccona",        element: "Aero",     rarity: "5*", canUseMultiple: false },
