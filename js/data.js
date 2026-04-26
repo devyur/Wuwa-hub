@@ -71,10 +71,10 @@ var WEAPONS = [
 ];
 
 var BUFFS = [
-  { id: "buff_coordinated", name: "Coordinated", desc: "Coordinated attack buffs" },
-  { id: "buff_echo",        name: "Echo Buff",   desc: "Echo skill amplification"  },
-  { id: "buff_forte",       name: "Forte Boost", desc: "Forte circuit enhancement" },
-  { id: "buff_resonance",   name: "Resonance",   desc: "Resonance skill boost"     },
+  { id: "buff_coordinated", name: "20%", desc: "General buff, half bonus" },
+  { id: "buff_echo",        name: "40%",   desc: "General buff, full bonus" },
+  { id: "buff_forte",       name: "50%+", desc: "Weak shill buff" },
+  { id: "buff_resonance",   name: "70%+",   desc: "Strong shill buff" },
 ];
 
 var ELEMENT_COLORS = {
